@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #A67C52;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.logo{
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.buttons{
+    display: inline-block;
+}
+
+.sec-2{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sec-1{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search{
+    height: 35px;
+    width: 500px;
+    padding: 0 15px;
+    border-radius:5px;
+    border: 0px;
+    color: rgb(114, 112, 112);
+}
+
+.i{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-right: 5px;
+    transition: all 0.25s;
+}
+
+.i:hover, i:hover{
+    color: beige;
+}
+
+.buttons:hover{
+    cursor: pointer;
+}
+
+i{
+    margin-right: 10px;
+    font-size: 23px;
+    color: #ffffff;
+    transition: all 0.25s;
+}
+
+.buttons{
+    border-right: 1px white solid;
+    margin-right: 40px;
+    padding-right: 20px;
+}
+
+#last-button{
+    border: none;
+    margin-right: 0;
+    padding-right: 0;
+}
+#account-drop-list{
+    color: white;
+    border: 0px;
+}
+#ul-dropdowen{
+    text-align: center;
+}
+#myaccount{
+    color: black;
+    font-weight: 500;
+    background-color: white;
+}
+#logout{
+    color: black;
+    margin-top: 10px;
+    width: 45%;
+    height: 30px;
+    background-color: #A67C52;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.rate{
+    text-align: center;
+    margin-top: 105px;
+    gap: 48px
+    }
+.text-rate{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.img-prodact{
+    width: 210px;
+    height: 138px;
+    border-radius: 10px;
+}
+.text-how{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-top: 40px;
+}
+.checked{
+    color: lightgray;
+    font-size: 30px;
+}
+.checked:hover{
+    color: orange;
+}
+.text-review{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0px;
+    margin-right: 270px;
+    margin-top: 40px;
+}
+#inbut-review{
+    width: 400px;
+    height: 89px;
+    border-radius: 15px;
+    background-color: #D9D9D9;
+    border: none;
+    margin-bottom: 50px;
+}
+.button-submit{
+    width: 400px;
+    height: 48px;
+    padding: 10px;
+    border-radius: 14px;
+    gap: 10px;
+    background-color: #A67C52;
+    color:#ffffff;
+    font-size:24px;
+    border: none;
+    margin-bottom: 200px;
+}
+    
+    
+    @media only screen and (max-width: 420px) {
+        #inbut-review{
+            width: 300px;
+        }
+        .text-review{
+            margin-right: 170px;
+        }
+        .button-submit{
+            width: 300px;
+        }
+    
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    @media screen and (max-width: 782px) {
+        header{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        .sec-1, .sec-2{
+            width: 100%;
+        }
+    
+        .sec-1{
+            margin-bottom: 15px;
+            justify-content: center;
+        }
+    
+        .sec-2{
+            justify-content: center;
+        }
+    }
+    
+    @media screen and (max-width: 470px){
+        .i{
+            color: white;
+            text-decoration: none;
+            font-size: 1em;
+        }
+        
+        i{
+            margin-right: 5px;
+            font-size: 1em;
+        }
+    
+        .log-in, .sign-up{
+            height: 25px;
+            width: 70px;
+        }
+    }
+    
+    @media screen and (max-width: 754px) {
+        .sub-header{
+            gap: 110px;
+        }
+    }
+    
+    @media screen and (max-width: 714px) {
+        .sub-header{
+            gap: 90px;
+        }
+    
+        .sub-header-text{
+            font-size: 1.2em;
+        }
+    
+        .sub-img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    
+    @media screen and (max-width: 574px){
+        .sub-header{
+            gap: 80px;
+        }
+    
+        .sub-header-text{
+            font-size: 1.1em;
+        }
+    
+        .sub-img{
+            width: 90px;
+            height: 90px;
+        }
+    }
+    
+    @media screen and (max-width: 528px){
+        .sub-header{
+            gap: 70px;
+        }
+    
+        .sub-header-text{
+            font-size: 1.1em;
+        }
+    
+        .sub-img{
+            width: 80px;
+            height: 80px;
+        }
+    }
+    
+    @media screen and (max-width: 462px){
+        .sub-header{
+            gap: 60px;
+        }
+    
+        .sub-header-text{
+            font-size: 1.05em;
+        }
+    
+        .sub-img{
+            width: 75px;
+            height: 75px;
+        }
+    }
+    
+    @media screen and (max-width: 420px){
+        .sub-header{
+            padding: 20px 5px;
+        }
+    }
+    @media screen and (max-width: 415px){
+        .buttons{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding-right: 20px;
+            margin-right: 10px;
+        }
+        .log-in{
+            margin-bottom: 5px;
+            margin-right: 5px;
+        }
+        .i{
+            margin-bottom: 5px;
+        }
+        i{
+            margin-right: 5px;
+            font-size: 1.2em;
+        }
+        .sub-header{
+            gap: 50px;
+        }
+    
+        .sub-header-text{
+            font-size: 1em;
+        }
+    
+        .sub-img{
+            width: 62px;
+            height: 62px;
+        }
+    }
+    
+    @media screen and (max-width: 362px){
+        .sub-header{
+            gap: 42px;
+        }
+    
+        .sub-header-text{
+            font-size: 0.95em;
+        }
+    
+        .sub-img{
+            width: 58px;
+            height: 58px;
+        }
+    }
+    
+    @media screen and (max-width: 358px){
+        .log-in{
+            margin-right: 0px;
+        }
+    }
+    
+    

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Product</title>
+    <link rel="stylesheet" href="style/sell.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.4.0/css/all.css"
+    />
+    <link rel="stylesheet" href="style/bootstrap.css" />
+  </head>
+  <body>
+    <header>
+      <section class="sec-1">
+        <a href="Home.html"
+          ><img src="images/logo.jpg" alt="logo" class="logo"
+        /></a>
+        <input type="text" placeholder="Search for products" class="search" />
+      </section>
+      <section class="sec-2">
+        <div class="buttons" id="border-right">
+          <a href="Cart.html" class="i">Cart</a>
+          <a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+        <div class="buttons" id="border-right">
+          <a href="sell.html" class="i">Sell</a>
+          <a href="sell.html"><i class="fa-solid fa-tag"></i></a>
+        </div>
+        <div class="buttons dropdown" id="last-button">
+          <button
+            class="btn dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            id="account-drop-list"
+          >
+            Account <a href=""><i class="fa-solid fa-user"></i></a>
+          </button>
+          <ul class="dropdown-menu dropdown-menu" id="ul-dropdowen">
+            <li>
+              <a class="dropdown-item active" href="Account.html" id="myaccount"
+                >My account</a
+              >
+            </li>
+<a href="Log in.html">
+  <li>
+    <button type="button" onclick="location.href=''" id="logout">
+      Log out
+    </button>
+  </li>
+</a>
+          </ul>
+        </div>
+      </section>
+    </header>
+
+    <p class="add-brodect">Add prodect for sale</p>
+    <section class="prodect-photo">
+      <div class="add-image-">
+        <div class="div-icon">
+          <i class="fa-solid fa-circle-plus" style="color: #d9d9d9"></i>
+        </div>
+      </div>
+      <div class="add-image">
+        <img src="images/item.png" alt="" class="img-add" />
+      </div>
+      <div class="add-image">
+        <img src="images/img-1.jpg" alt="" class="img-add" />
+      </div>
+      <div class="add-image">
+        <img src="images/img-2.jpg" alt="" class="img-add" />
+      </div>
+      <div class="add-image">
+        <img src="images /img-3.jpg" alt="" class="img-add" />
+      </div>
+    </section>
+    <p class="upload-up">Upload up to 20 photos</p>
+
+    <section class="detals">
+      <label class="category-text">Category</label><br />
+      <select name="" id="category">
+        <option value="">
+          <img src="./img-1.jpg" alt="" class="img-option" />Crafts
+        </option>
+        <option value="">
+          <img src="./img-2.jpg" alt="" class="img-option" />Pantings
+        </option>
+        <option value="">
+          <img src="./img-3.jpg" alt="" class="img-option" />Accessories
+        </option>
+        <option value="">
+          <img src="" alt="" class="img-option" />
+        </option></select
+      ><br /><br />
+      <label for="" class="text-name">Prodact Name</label><br />
+      <input type="text" required class="input-name" /><br /><br />
+      <label for="" class="tex-price">price</label><br />
+      <input type="number" required class="input-price" /><br /><br />
+      <label for="" class="tex-description">description</label><br />
+      <input type="text" class="input-description" /><br /><br /><br />
+      <button class="button-add">Add</button>
+    </section>
+
+    <footer
+      class="text-center text-lg-start foot"
+      style="background-color: #a67c52"
+    >
+      <div class="container d-flex justify-content-center py-3">
+        <a
+          href="https://www.facebook.com/profile.php?id=61551472017705"
+          target="_blank"
+        >
+          <button type="button" class="btn btn- btn-lg btn-floating mx-2">
+            <i class="fa-brands fa-facebook" style="color: #ffffff"></i>
+          </button>
+        </a>
+
+        <a href="https://www.tiktok.com/@user4079761662749" target="_blank">
+          <button type="button" class="btn btn- btn-lg btn-floating mx-2">
+            <i class="fa-brands fa-tiktok" style="color: #ffffff"></i>
+          </button>
+        </a>
+
+        <a href="https://www.instagram.com/bazzar7081/" target="_blank">
+          <button type="button" class="btn btn- btn-lg btn-floating mx-2">
+            <i class="fa-brands fa-instagram" style="color: #ffffff"></i>
+          </button>
+        </a>
+
+        <button type="button" class="btn btn- btn-lg btn-floating mx-2">
+          <i class="fa-regular fa-envelope" style="color: #ffffff"></i>
+        </button>
+      </div>
+
+      <!-- Copyright -->
+      <div class="text-center text-white" style="background-color: #282A35">
+        <h5>Copyright © 2023 , E-BAZAAR All Rights Reserved</h5>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script src="style/bootstrap.js"></script>
+  </body>
+</html>

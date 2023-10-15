@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rate</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    </head>
+        <body>
+            <header>
+                <section class="sec-1">
+                    <img src="./logo.jpg" alt="logo" class="logo">
+                    <input type="text" placeholder="Search for products" class="search">
+                </section>
+                <section class="sec-2">
+                    <div class="buttons" id="border-right">
+                        <a href="" class="i">Cart</a>
+                        <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                    <div class="buttons" id="border-right">
+                        <a href="" class="i">Sell</a>
+                        <a href=""><i class="fa-solid fa-tag"></i></a>
+                    </div>
+                    <div class="buttons dropdown" id="last-button">
+                        <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="account-drop-list">Account <a href=""><i class="fa-solid fa-user"></i></a></button>
+                        <ul class="dropdown-menu dropdown-menu" id="ul-dropdowen">
+                            <li><a class="dropdown-item active" href="#" id="myaccount">My account</a></li>
+                            <li><button type="button" onclick="location.href=''" id="logout">Log out</button></li>
+                        </ul>
+                    </div>
+                </section>
+            </header>
+            <section class="rate">
+                <h1 class="text-rate">Rate your order</h1>
+                <img src="./item.png" class="img-prodact">
+                <p class="text-how">How would you rate it?</p>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <form>
+                    <p class="text-review">Write your review</p>
+                    <input type="text" id="inbut-review"><br>
+                    <button class="button-submit"><b>Submit</b></button>
+                </form>
+            </section>
+            <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+        </body>
+    </html>
+

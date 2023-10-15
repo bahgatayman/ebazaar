@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visa</title>
+    <link rel="stylesheet" href="style/visa.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <link rel="stylesheet" href="style/bootstrap.css">
+</head>
+<body>
+    <header>
+        <section class="sec-1">
+            <a href="Home.html"><img src="logo.jpg" alt="logo" class="logo"></a>
+            <input type="text" placeholder="Search for products" class="search">
+        </section>
+        <section class="sec-2">
+            <div class="buttons" id="border-right">
+                <a href="Cart.html" class="i">Cart</a>
+                <a href="Cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="buttons" id="border-right">
+                <a href="sell.html" class="i">Sell</a>
+                <a href="sell.html"><i class="fa-solid fa-tag"></i></a>
+            </div>
+            <div class="buttons dropdown" id="last-button">
+                <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="account-drop-list">Account <a href=""><i class="fa-solid fa-user"></i></a></button>
+                <ul class="dropdown-menu dropdown-menu" id="ul-dropdowen">
+                    <li><a class="dropdown-item active" href="#" id="myaccount">My account</a></li>
+                    <li><button type="button" onclick="location.href=''" id="logout">Log out</button></li>
+                </ul>
+            </div>
+        </section>
+    </header>
+    <p class="text-payment">Payment</p>
+    <section class="sec-total">
+        <p class="text-total">Total</p>
+        <p class="text-price">154.5EGP</p>
+    </section>
+    <section class="buttons">
+        <a href="cash.html"><button class="button-cash" type="button" onclick="location.href=''">Chash</button></a>
+        <button class="button-visa" type="button" onclick="location.href=''">Visa</button>
+    </section>
+    <section class="inputs">
+        <input type="text" placeholder="First name" required class="input"><br><br>
+        <input type="text" placeholder="Last name" required class="input"><br><br>
+        <input type="text" placeholder="Address" required class="input"><br><br>
+        <input type="number" placeholder="Phon number" required class="input"><br><br>
+        <input type="number" placeholder="Card number" required class="input"><br><br>
+        <input type="number" placeholder="CVV" class="input-visa" required >
+        <input type="date" required class="input-visa"><br><br>
+        <button class="confirm-payment" type="button" onclick="location.href=''">Confirm Payment</button>
+    </section>
+    <script src="style/bootstrap.js"></script>
+</body>
+</html>

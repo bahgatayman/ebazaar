@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.0/css/all.css">
+    <link rel="stylesheet" href="style/payment.css">
+    <title>Payment Address</title>
+</head>
+<body>
+    <header>
+        <section class="sec-1">
+            <a href="Home.html"><img src="logo.jpg" alt="logo" class="logo"></a>
+            <input type="text" placeholder="Search for products" class="search">
+        </section>
+        <section class="sec-2">
+            <div class="buttons" id="border-right">
+                <a href="Cart.html" class="i">Cart</a>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+            <div class="buttons" id="border-right">
+                <a href="" class="i">Sell</a>
+                <a href=""><i class="fa-solid fa-tag"></i></a>
+            </div>
+            <div class="buttons" id="last-button">
+                <a href="" class="i">Account</a>
+                <a href=""><i class="fa-solid fa-user" style="color: #fafcff;"></i></a>
+            </div>
+        </section>
+    </header>
+ 
+    <div class="container">
+        <div class="address-form">
+            <h1>Address Details</h1>
+            <form action="">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required>
+                
+                <label for="city">City</label>
+                <input type="text" id="city" name="city" required>
+                
+                <label for="zipcode">Zip Code</label>
+                <input type="text" id="zipcode" name="zipcode" required>
+            </form>
+            
+            <div class="save-btn-container">
+                <button onclick="showConfirmationAddress()" class="confirm-address">Save</button>
+            </div>
+            <div id="address-message" class="address-message">
+                <span style="color: green;">Address Saved!</span>
+                <button onclick="hideConfirmationAddress()" class="Address-btn">OK</button>
+            </div>
+        </div>
+        
+        <div class="payment-form">
+            <h1>Payment Method</h1>
+            <div class="payment-method-container">
+                <button id="cash-button" class="payment" onclick="showConfirmation()">Cash</button>
+                <a href="visa.html" class="payment payment-link">Visa</a>
+            </div>
+
+            <div id="confirmation-message" class="confirmation-message">
+                <span style="color: green;">The order has been confirmed !</span>
+                <button onclick="hideConfirmation()">OK</button>
+            </div>
+        </div>
+    </div>
+    <script src="style/payment.js"></script>
+</body>
+</html>

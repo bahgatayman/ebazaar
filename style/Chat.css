@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #A67C52;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.logo{
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.buttons{
+    display: inline-block;
+}
+
+.sec-2{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sec-1{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search{
+    height: 35px;
+    width: 500px;
+    padding: 0 15px;
+    border-radius:5px;
+    border: 0px;
+    color: rgb(114, 112, 112);
+}
+
+.i{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-right: 5px;
+    transition: all 0.25s;
+}
+
+.i:hover, i:hover{
+    color: beige;
+}
+
+.buttons:hover{
+    cursor: pointer;
+}
+
+i{
+    margin-right: 10px;
+    font-size: 23px;
+    color: #ffffff;
+    transition: all 0.25s;
+}
+
+.buttons{
+    border-right: 1px white solid;
+    margin-right: 40px;
+    padding-right: 20px;
+}
+
+#last-button{
+    border: none;
+    margin-right: 0;
+    padding-right: 0;
+}
+#account-drop-list{
+    color: white;
+    border: 0px;
+}
+#ul-dropdowen{
+    text-align: center;
+}
+#myaccount{
+    color: black;
+    font-weight: 500;
+    background-color: white;
+}
+#logout{
+    color: black;
+    margin-top: 10px;
+    width: 45%;
+    height: 30px;
+    background-color: #A67C52;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.cover{
+    position:relative;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+}
+#img-cover{
+    width: 85%;
+    height: 200px;
+}
+#photo{
+    margin: auto;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 150حء;
+    height: 150px;
+}
+#cover-drop-list{
+    margin: auto;
+    position: absolute;
+    top: 220px;
+    left: 90px;
+    right: 0;
+    bottom: 0;
+    font-size: 30px;
+    width: 40px;
+    height: 40px;
+    border: 0px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+}
+.cover-name{
+    margin: auto;
+    position: absolute;
+    top: 280px;
+    left: 0;
+    right: 30px;
+    bottom: 0;
+    font-size: 25px;
+    width: 30px;
+    height: 40px;
+    font-weight: 600;
+}
+
+
+
+div{
+    display: inline-block;
+}
+
+.space{
+    width: 100%;
+    height: 150px;
+    
+}
+
+.g-buttonss{
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    border:solid #A67C52;
+    margin: auto;
+    padding: 5px;
+}
+.contain{
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+.bo{
+    border-radius: 20px;
+    padding: 20px;
+}
+
+
+#myTab{
+    width: 40%;
+    height: 40px;
+    border: 3px #A67C52 solid;
+    border-radius: 5px;
+    width: 45%;
+}
+#li-table{
+    border-bottom: #A67C52 solid 1px;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 4px;
+}
+#postes-tab{
+    padding: 0px;
+    width: 90px;
+    font-weight: 500;
+}
+#favourit-tab{
+    padding: 0px;
+    width: 90px;
+    font-weight: 500;
+}
+#orders-tab{
+    padding: 0px;
+    width: 90px;
+    font-weight: 500;
+}
+#chats-tab{
+    padding: 0px;
+    width: 90px;
+    background-color: #A67C52;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.mainblock{
+    justify-content: center;
+}
+.chats{
+    background-color: #D9D9D9;
+    height:89px;
+    width: 100%;
+}
+div{
+    display: inline-block;
+}
+.a{
+    margin-left: 370px;
+    background-color: #D9D9D9;
+    font-size: small;
+    padding: 20px;
+}
+.chat-img{
+    width: 39px;
+    height: 39px;
+}
+.b{
+    margin-left: 5px;
+}
+.d{
+    margin-top:0px;
+}
+
+
+@media screen and (max-width: 714px) {
+    header{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sec-1, .sec-2{
+        width: 100%;
+    }
+
+    .sec-1{
+        margin-bottom: 15px;
+    }
+
+    .sec-2{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 420px){
+    .i{
+        color: white;
+        text-decoration: none;
+        font-size: 1em;
+    }
+    
+    i{
+        margin-right: 5px;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .buttons{
+        display: flex;
+        justify-content: center;
+    }
+    #account-drop-list{
+        color: white;
+        border: 0px;
+        font-size: medium;
+        width: 100px;
+    }
+    .buttons{
+        border-right: 1px white solid;
+        margin-right: 40px;
+        padding-right: 5px;
+    }
+}

@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #A67C52;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+}
+
+.logo{
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.buttons{
+    display: inline-block;
+}
+
+.sec-2{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sec-1{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search{
+    height: 35px;
+    width: 500px;
+    padding: 0 15px;
+    border-radius:5px;
+    border: 0px;
+    color: rgb(114, 112, 112);
+}
+
+.i{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    margin-right: 5px;
+    transition: all 0.25s;
+}
+
+.i:hover, i:hover{
+    color: beige;
+}
+
+.buttons:hover{
+    cursor: pointer;
+}
+
+i{
+    margin-right: 10px;
+    font-size: 23px;
+    color: #ffffff;
+    transition: all 0.25s;
+}
+
+.buttons{
+    border-right: 1px white solid;
+    margin-right: 40px;
+    padding-right: 20px;
+}
+
+#last-button{
+    border: none;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.sub-header{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(240, 240, 240);
+    padding: 30px 5px;
+    gap: 130px;
+}
+
+.sub-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sub-header-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sub-header-text{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/*CONTENT*/
+
+.container {
+    max-width: 800px;
+    margin: 15px auto;
+    padding: 20px;
+}
+
+.address-form, .payment-form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.address-form h1, .payment-form h1 {
+    text-align: center;
+}
+
+.address-form label, .payment-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.address-form input[type="text"] {
+    width: 97%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.confirm-address {
+    background-color: #A67C52;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.payment-method {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.payment-method a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.payment-link{
+    text-decoration: none;
+}
+
+.payment {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.payment:hover {
+    background-color: #45a049;
+}
+
+.confirmation-message, .address-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #ffffff;
+    border: 2px solid green;
+    border-radius: 5px;
+    z-index: 9999;
+}
+
+.confirmation-message button, .address-message button {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: #ffffff;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.confirmation-message button:hover, .address-message button:hover {
+    background-color: #45a049;
+}
+
+.payment-method-container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-top: 10px;
+    padding: 10px 5px 0px 5px;
+    flex: wrap;
+    align-items: center;
+}
+
+.save-btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .address-form input[type="text"],
+    .address-form input[type="number"],
+    .address-form input[type="date"] {
+        width: 97%;
+    }
+    
+    .confirm-address {
+        width: 160px;
+    }
+}
+
+@media screen and (max-width: 754px) {
+    .sub-header{
+        gap: 110px;
+    }
+}
+
+@media screen and (max-width: 714px) {
+    header{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .sec-1, .sec-2{
+        width: 100%;
+    }
+
+    .sec-1{
+        margin-bottom: 15px;
+        justify-content: center;
+    }
+
+    .sec-2{
+        justify-content: center;
+    }
+
+    .sub-header{
+        gap: 90px;
+    }
+
+    .sub-header-text{
+        font-size: 1.2em;
+    }
+
+    .sub-img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 574px){
+    .sub-header{
+        gap: 80px;
+    }
+
+    .sub-header-text{
+        font-size: 1.1em;
+    }
+
+    .sub-img{
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media screen and (max-width: 528px){
+    .sub-header{
+        gap: 70px;
+    }
+
+    .sub-header-text{
+        font-size: 1.1em;
+    }
+
+    .sub-img{
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 462px){
+    .sub-header{
+        gap: 60px;
+    }
+
+    .sub-header-text{
+        font-size: 1.05em;
+    }
+
+    .sub-img{
+        width: 75px;
+        height: 75px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .i{
+        color: white;
+        text-decoration: none;
+        font-size: 1em;
+    }
+    
+    i{
+        margin-right: 5px;
+        font-size: 1em;
+    }
+
+    .sub-header{
+        padding: 20px 5px;
+    }
+}
+
+@media screen and (max-width: 414px){
+    .sub-header{
+        gap: 50px;
+    }
+
+    .sub-header-text{
+        font-size: 1em;
+    }
+
+    .sub-img{
+        width: 62px;
+        height: 62px;
+    }
+}
+
+@media screen and (max-width: 362px){
+    .sub-header{
+        gap: 42px;
+    }
+
+    .sub-header-text{
+        font-size: 0.95em;
+    }
+
+    .sub-img{
+        width: 58px;
+        height: 58px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .buttons{
+        display: flex;
+        justify-content: center;
+    }
+}
